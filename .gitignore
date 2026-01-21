@@ -1,0 +1,17 @@
+# environments
+asr_env/
+anaconda_projects/
+.venv/
+venv/
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
+
+# datasets
+data/
+SpeechCommands/
+speech_commands_v0.02.tar.gz
+Actor_*/
+
+# optional privacy
+*.wav
