@@ -1,3 +1,6 @@
+![Cover](noise_cover_image.png)
+
+
 # Noise-Robust Keyword Spotting for Distress Detection (KWS + Noise Robustness)
 
 A practical **distress keyword spotting (KWS)** pipeline that detects emergency/distress phrases from speech under **real-world noisy conditions**. The system is designed for environments where background noise is unavoidable (public spaces, streets, vehicles, crowded rooms) and the cost of missed detections is high.
