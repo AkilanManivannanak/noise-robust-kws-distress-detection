@@ -2,6 +2,7 @@
 
 ![noise_cover_image](./noise_cover_image.png)
 
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:7a2e00,50:ff7b00,100:ffb347&height=220&section=header&text=%F0%9F%8E%99%EF%B8%8F%20Noise-Robust%20Keyword%20Spotting%20for%20Distress%20Detection&fontSize=50&fontColor=ffffff&fontAlignY=38&desc=Multimodal%20AI%20Driver%20Safety%20System&descAlignY=58&descSize=22&animation=fadeIn" width="100%"/>
 # 🎙️ Noise-Robust Keyword Spotting for Distress Detection
 
 **Live repo:** [github.com/AKilalours/noise-robust-kws-distress-detection](https://github.com/AKilalours/noise-robust-kws-distress-detection)
@@ -19,6 +20,7 @@
 ## 🎯 Goal & SLOs
 
 Detect **distress keywords** ("help", "call police", "emergency") in real-world noisy audio — where false negatives cost safety.
+
 
 | SLO | Target | Achieved |
 |---|---|---|
@@ -384,3 +386,5 @@ This is a collaborative team project — all work was split equally between both
 <sub>Built with PyTorch · MFCC · CNN · Noise Augmentation · Apple MPS</sub><br/>
 <sub>Team 6 · Akila Lourdes Miriyala Francis & Akilan Manivannan</sub>
 </div>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:7a2e00,50:ff7b00,100:ffb347&height=120&section=footer" width="100%"/>
