@@ -250,16 +250,16 @@ Measured on **Apple MPS**:
 ## 🛠️ MLOps & Infrastructure
 
 ### Reproducibility
-- All experiments tracked with fixed random seeds.
-- Dataset split (train/val/test) is **fixed and version-controlled** to prevent leakage across variants.
-- Feature extraction config (sample rate, n_mels, n_mfcc, frame length) stored in a central `config.py`.
+- **Splits are fixed:** Speech Commands uses the dataset's official training / validation / testing lists; RAVDESS is split by speaker (actors 1–18 train, 19–21 val, 22–24 test), so no voice appears in more than one split.
+- **Random seeds are not fixed yet:** noise mixing, SpecAugment and weight initialisation are random, so reruns differ slightly (tracked as an open issue).
+- **Feature settings** (sample rate, n_mels, n_mfcc, frame length) live in the setup cell at the top of `ASR.ipynb`.
 
 ### Experiment tracking
 - Results table maintained manually across 4 variants (CLEAN-LOGMEL, NOISE-LOGMEL, SPECAUG-LOGMEL, MFCC-NOISE).
 - Next step: integrate **MLflow** or **Weights & Biases** for automated metric logging per run.
 
-### CI/CD awareness
-- The pipeline is structured to support CI gates: model is promoted only if clean accuracy > 85% AND 0 dB SNR accuracy > 70%.
+### Planned CI gate
+- Proposed promotion rule: accept a model only if clean accuracy > 85% and 0 dB SNR accuracy > 70%. Not automated yet.
 - Planned: GitHub Actions workflow to run evaluation on every PR merge, blocking regressions.
 
 ### Deployment path
