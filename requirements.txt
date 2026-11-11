@@ -1,0 +1,10 @@
+# Packages imported by ASR.ipynb (plus Jupyter to run it).
+# Install PyTorch/torchaudio for your platform first if you need GPU builds: https://pytorch.org/get-started/locally/
+torch
+torchaudio
+numpy
+scikit-learn
+matplotlib
+soundfile
+jupyterlab
+ipykernel
